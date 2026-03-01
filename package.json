@@ -1,0 +1,38 @@
+{
+    "name": "webext-publish-helper",
+    "version": "0.1.0",
+    "description": "CWS publishing automation for Chrome extensions — zip packaging, manifest validation, store listing generation, and submission checklist for MV3.",
+    "author": "Zovo <hello@zovo.one>",
+    "license": "MIT",
+    "keywords": [
+        "chrome-extension",
+        "publish",
+        "cws",
+        "packaging",
+        "zip",
+        "listing",
+        "manifest-v3",
+        "browser-extension",
+        "release"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/theluckystrike/webext-publish-helper.git"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.260",
+        "@types/node": "^20.0.0",
+        "typescript": "^5.3.3"
+    }
+}
